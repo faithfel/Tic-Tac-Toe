@@ -100,9 +100,19 @@ body{
     align-items: center;
     flex-direction: column;
     color: #fff;
+    font-size: 80px;
+    gap: 20px;
 }
 
 .hidden{
     display: none;
+}
+
+.playAgain{
+    font-size: 40px;
+    background-color: #261629;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
 }
 

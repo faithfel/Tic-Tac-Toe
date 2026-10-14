@@ -1,6 +1,8 @@
 const boxes = document.querySelectorAll(".box");
 const endScreen = document.querySelector(".endScreen");
 const restartBtn = document.querySelector(".playAgain");
+const p1ScoreText = document.querySelector("#player1Score span");
+const p2ScoreText = document.querySelector("#player2Score span");
 
 let p1Turn = true;
 
@@ -17,6 +19,9 @@ const winningCombos = [
 
 let p1Choices = [];
 let p2Choices = [];
+
+let p1Score = 0;
+let p2Score = 0;
 
 startGame()
 
@@ -64,10 +69,14 @@ function checkWin(){
     );
 
     if (p1Won) {
-        endScreen.firstElementChild.textContent = "Player 1 (X) Wins!";
+        endScreen.firstElementChild.textContent = "Player 1 Wins!";
+        p1Score++
+        p1ScoreText.textContent = p1Score;
         endGame()
     } else if (p2Won) {
-        endScreen.firstElementChild.textContent = "Player 2 (O) Wins!";
+        endScreen.firstElementChild.textContent = "Player 2 Wins!";
+        p2Score++
+        p2ScoreText.textContent = p2Score;
         endGame()
     } else if (p1Choices.length + p2Choices.length === 9) {
         endScreen.firstElementChild.textContent = "It's a Draw!";
