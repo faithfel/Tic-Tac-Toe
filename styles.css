@@ -43,6 +43,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 130px;
+    user-select: none;
 }
 
 .x{
@@ -73,15 +74,18 @@ body{
     align-items: center;
     padding: 10px;
     font-size: 24px;
-    color: #878787;
 }
 
 #player1Score{
-    background-color: #2a2a5f;
+    background-color: #1a1a3b;
+    border: 4px #4d4dc9 solid;
+    color: #4d4dc9;
 }
 
 #player2Score{
-    background-color: #5f2a2a;
+    background-color: #391919;
+    border: 4px #c94d4d solid;
+    color: #c94d4d;
     margin-left: auto;
 }
 
