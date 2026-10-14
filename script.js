@@ -18,9 +18,14 @@ const winningCombos = [
 let p1Choices = [];
 let p2Choices = [];
 
-for(i = 0; i < boxes.length; i++){
-    boxes[i].addEventListener("click", gameTurns, {once: true})
+startGame()
+
+function startGame(){
+    for(i = 0; i < boxes.length; i++){
+        boxes[i].addEventListener("click", gameTurns, {once: true})
+    }
 }
+
 
 function gameTurns(e){
     const userClicked = e.currentTarget;
@@ -83,5 +88,7 @@ restartBtn.addEventListener("click", () =>{
     for(i = 0; i < boxes.length; i++){
     boxes[i].classList.remove("x", "o");
     boxes[i].textContent = "";
+    boxes[i].removeEventListener("click", gameTurns)
     }
+    startGame()
 })
