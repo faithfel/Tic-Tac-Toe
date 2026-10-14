@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="scoreBoard">
-        <div class="score" id="player1Score">Player 1 Score: <span>0</span> </div>
-        <div class="score" id="player2Score">Player 1 Score: <span>0</span></div>
+        <div class="score" id="player1Score">Player 1: &nbsp; <span>0</span> </div>
+        <div class="score" id="player2Score">Player 2: &nbsp;<span>0</span></div>
     </div>
     <div class="mainContainer">
     <div class="container">
@@ -26,6 +26,11 @@
     </div>
     </div>
 
-    <div class="endScreen"></div>
+    <div class="endScreen hidden">
+        <div class="playerWonScreen">
+            player won
+        </div>
+        <button class="playAgain">Play Again</button>
+    </div>
 </body>
 </html>

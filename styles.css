@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    ;
 }
 body{
     background-color: #141414;
@@ -10,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
 }
 .mainContainer{
     height: 562px;
@@ -20,7 +22,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px #b7b7b7 solid;
+    border: 1px #b7b7b7 solid;
 }
 .container{
     height: 500px;
@@ -39,6 +41,13 @@ body{
     border-radius: 4px;
 }
 
+.x{
+    background-color: #5f2a2a;
+}
+
+.o{
+    background-color: #2a2a5f;
+}
 .scoreBoard{
     height: 70px;
     width: 562px;
@@ -51,6 +60,12 @@ body{
     height: 100%;
     width: 250px;
     border-radius: 10px;
+    color: #141414;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+    color: #878787;
 }
 
 #player1Score{
@@ -61,3 +76,21 @@ body{
     background-color: #5f2a2a;
     margin-left: auto;
 }
+
+.endScreen{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000006d;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.hidden{
+    display: none;
+}
+
