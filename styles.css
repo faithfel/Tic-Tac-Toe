@@ -39,15 +39,23 @@ body{
     width: 160px;
     border: 1px #707070 solid;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130px;
 }
 
 .x{
-    background-color: #5f2a2a;
+    background-color: #2a2a5f;
+    color: #4d4dc9;
 }
 
 .o{
-    background-color: #2a2a5f;
+    background-color: #5f2a2a;
+    color: #c43939;
 }
+
+
 .scoreBoard{
     height: 70px;
     width: 562px;
